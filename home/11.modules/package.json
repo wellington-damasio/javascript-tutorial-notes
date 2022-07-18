@@ -1,0 +1,9 @@
+{
+  "name": "whatever",
+  "version": "1.0.0",
+  "description": "just learning modules in nodejs",
+  "main": "index.js",
+  "author": "wellington-damasio",
+  "license": "MIT",
+  "type": "module"
+}
