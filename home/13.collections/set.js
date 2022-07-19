@@ -59,5 +59,37 @@ console.log(chars)
 // --------------------------------------
 //    Check if a value is in the Set
 // --------------------------------------
+let exists = chars.has('a')
+console.log(exists) // true
+console.log(chars.has('i')) // false
+
+// --------------------------------------
+//     Remove elements from a set
+// --------------------------------------
+chars.delete('z')
+chars.delete('a')
+
+console.log(chars)
+
+// --------------------------------------
+//     Looping the items of a Set
+// --------------------------------------
+let roles = new Set()
+roles.add('administrator')
+  .add('financer')
+  .add('investor')
+  .add('consultant')
+  .add('analyst')
+
+for(const role of roles) {
+  console.log(`Role: ${role}`)
+}
+
+// ---------------------------------------------
+// Invoke a callback on each element of a Set
+// ---------------------------------------------
+roles.forEach(role => {
+  console.log(role)
+});
 
 
