@@ -90,6 +90,6 @@ for(const role of roles) {
 // ---------------------------------------------
 roles.forEach(role => {
   console.log(role)
-});
+};
 
-
+  
