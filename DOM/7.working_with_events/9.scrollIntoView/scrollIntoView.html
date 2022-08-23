@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>scrollIntoView</title>
+
+  <style>
+    .btn {
+      border: none;
+      display: block;
+      width: 100%;
+      height: 30vh;
+      font-size: 4rem;
+      font-family: monospace;
+      color: lightseagreen;
+      border: 5px solid #272727;
+      cursor: pointer;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    ul > li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 30vh;
+      font-size: 4rem;
+      font-family: monospace;
+    }
+
+    ul > li:nth-child(even) {
+      color: orangered;
+      background-color: #272727;
+    }
+
+    ul > li.special {
+      color: darkblue;
+      background-color: burlywood;
+    }
+  </style>
+</head>
+<body>
+  <h1>scrollIntoView</h1>
+
+  <div class="container">
+    <button class="btn">Scroll Into View</button>
+    <ul>
+        <li>C</li>
+        <li>Java</li>
+        <li>Python</li>
+        <li>C++</li>
+        <li>C#</li>
+        <li>Go</li>
+        <li>Visual Basic</li>
+        <li>JavaScript</li>
+        <li>PHP</li>
+        <li>SQL</li>
+        <li>R</li>
+        <li>Swift</li>
+        <li class="special">JavaScript</li>
+        <li>MATLAB</li>
+        <li>Assembly language</li>
+        <li>Ruby</li>
+        <li>PL/SQL</li>
+        <li>Classic Visual Basic</li>
+        <li>Perl</li>
+        <li>Scratch</li>
+        <li>Objective-C</li>
+    </ul>
+</div>
+
+  <script src="./scrollIntoView.js"></script>
+</body>
+</html>

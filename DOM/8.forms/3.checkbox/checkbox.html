@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript - Checkbox</title>
+  <style>
+    body {
+      font-family: monospace;
+      font-size: 1rem;
+    }
+
+    button {
+      font-family: monospace;
+    }
+  </style>
+</head>
+<body>
+  <h1>JavaScript - Checkbox</h1>
+
+  <label for="accept">
+    <input type="checkbox" name="accept" id="accept" value="yes"> Accept
+  </label>
+  <!-- It’s a good practice to always associate a checkbox with a label to 
+    improve usability and accessibility. By doing this, clicking the label 
+    also checks or unchecks the checkbox. -->
+
+  <!-- Note that the for attribute of the label must match the id of the
+     checkbox -->
+
+  <h2>Getting values of multiple selected checkboxes</h2>
+  
+  <p>Select your favorite color:</p>
+  <label for="red">
+    <input type="checkbox" name="color" id="red" value="Red"> Red
+  </label>
+  <label for="yellow">
+    <input type="checkbox" name="color" id="yellow" value="Yellow"> Yellow
+  </label>
+  <label for="blue">
+    <input type="checkbox" name="color" id="blue" value="Blue"> Blue
+  </label>
+  <label for="green">
+    <input type="checkbox" name="color" id="green" value="Green"> Green
+  </label>
+
+  <p>
+    <button id="btn">Get Selected Colors</button>
+    <p id="selectedColors"></p>
+  </p>
+
+  <h2>Check/Uncheck all checkboxes</h2>
+
+  <label for="c1"><input type="checkbox" name="moreColor" value="red" id="c1"> Red</label>
+  <label for="c2"><input type="checkbox" name="moreColor" value="green" id="c2"> Green</label>
+  <label for="c3"><input type="checkbox" name="moreColor" value="blue" id="c3">Blue</label>
+
+  <p>
+    <button id="btnAll">Check / Uncheck All</button>
+  </p>
+
+  <div id="root"></div>
+
+  <script src="./checkbox.js"></script>
+</body>
+</html>

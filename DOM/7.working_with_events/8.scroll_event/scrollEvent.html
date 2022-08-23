@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript - Scroll Event</title>
+
+  <style>
+    body {
+      min-height: 400vh;
+      min-width: 200vw;
+    }
+
+    #scrollDemo {
+      height: 300px;
+      width: 300px;
+      overflow: auto;
+      background-color: #f0db4f;
+    }
+
+    #scrollDemo > p {
+      height: 400px;
+      width: 400px;
+    }
+  </style>
+</head>
+<body>
+  <h1>JavaScript - Scroll Event</h1>
+
+  <div id="scrollDemo">
+    <p>JS Sroll Event Demo</p>
+  </div>
+
+  <div id="control">
+    <button id="btnScrollLeft">Scroll Left</button>
+    <button id="btnScrollRight">Scroll Right</button>
+    <button id="btnScrollTop">Scroll Top</button>
+    <button id="btnScrollBottom">Scroll Bottom</button>
+  </div>
+  <script src="./scrollEvent.js"></script>
+</body>
+</html>

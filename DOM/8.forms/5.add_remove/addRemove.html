@@ -1,0 +1,76 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript - Add and Remove Options</title>
+  <style>
+    body {
+      font-family: monospace;
+      font-size: 1rem;
+    }
+
+    .framework-list {
+      max-width: 25rem;
+      padding: 1rem;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;    
+    }
+
+    .framework-input {
+      min-height: 2rem;
+      font-size: 0.9rem;
+      padding-left: 0.5rem;
+    }
+
+    .framework-options,
+    .framework-input {
+      display: block;
+      width: 100%;
+      margin-bottom: 1rem;
+      font-size: 1.05rem;
+      margin-top: 0.4rem;
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      border: none;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      background-color: cornflowerblue;
+      color: white;
+      font-weight: 700;
+      min-height: 2.5rem;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>JavaScript - Add and Remove Options</h1>
+
+  <select id="select"></select>
+
+  <h1>Put it all together</h1>
+  <div class="framework-list" id="framework-list">
+    <form>
+      <label for="framework-input"> Framework:
+        <input type="text" name="framework-input" id="framework-input"
+          placeholder="Enter a framework" class="framework-input">
+      </label>
+      <button class="btn" id="btnAdd">Add Framework</button>
+      <label for="framework-options"> Framework List
+        <select name="framework-options" id="framework-options" class="framework-options" multiple>
+          <option value="React">React</option>
+          <option value="Svelte">Svelte</option>
+          <option value="Flamethrower">Flamethrower</option>
+        </select>
+      </label>
+      <button class="btn" id="btnRemove">Remove Framework</button>
+    </form>
+  </div>
+  <script src="./addRemove.js"></script>
+</body>
+</html>

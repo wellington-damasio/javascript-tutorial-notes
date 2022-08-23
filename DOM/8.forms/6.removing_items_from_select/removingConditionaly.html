@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript - Removing Conditionaly</title>
+  <style>
+    body {
+      font-family: monospace;
+    }
+    button {
+      display: block;
+      margin-top: .5rem;
+    }
+
+    .frameworks {
+      border: 2px solid coral;
+      max-width: 25rem;
+      padding: 1rem;
+    }
+
+    .frameworks__label {
+      display: block;
+      font-size: 1rem;
+      margin-bottom: .4rem;
+    }
+
+    .frameworks__select {
+      width: 100%;
+      min-height: 6rem;
+      font-size: .9rem;
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      min-height: 2.5rem;
+      font-weight: 700;
+      font-size: 1rem;
+      background-color: coral;
+      color: white;
+      border-radius: .4rem;
+      border: none;
+      cursor: pointer
+    }
+  </style>
+</head>
+<body>
+  <h1>JavaScript - Removing Conditionaly</h1>
+
+  <label for="list">Alphabet</label>
+  <select id="list">
+    <option value="A">Item A</option>
+    <option value="B">Item B</option>
+    <option value="C">Item C</option>
+  </select>
+
+  <button id="removeItems">Remove A and C</button>
+
+  <h2>Removing every <em>.js</em> framework</h2>
+
+  <div class="frameworks">
+    <label for="frameworks-list" class="frameworks__label">Frameworks:</label>
+    <select id="frameworks-list" class="frameworks__select" multiple>
+      <option value="1">Angular</option>
+      <option value="2">React</option>
+      <option value="3">Vue.js</option>
+      <option value="4">Svelte</option>
+      <option value="5">Node.js</option>
+      <option value="6">Next.js</option>
+    </select>
+    <p>Click the Remove button to remove the frameworks ended with <em>.js</em></p>
+    <button class="btn" id="removeBtn">Remove</button>
+  </div>
+
+  <script src="./removingConditionaly.js"></script>
+</body>
+</html>

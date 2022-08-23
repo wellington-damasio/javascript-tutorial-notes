@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript - Form Basics</title>
+  <link rel="stylesheet" href="formBasics.css">
+</head>
+<body>
+  <form action="/signup" method="post" id="signup"> 
+    <!-- The action attribute specifies a URL that will process the form 
+    submission. -->
+    <!-- The method attribute specifies the HTTP method to submit the form 
+    with. -->
+
+    <h1>Sign Up</h1>
+
+    <div class="field">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your fullname" />
+      <small></small>
+    </div>
+
+    <div class="field">
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" placeholder="Enter your email address" />
+      <small></small>
+    </div>
+
+    <button type="submit" id="submit">Subscribe</button>
+  </form>
+
+  <script src="./formBasics.js"></script>
+</body>
+</html>

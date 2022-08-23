@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript - classList</title>
+  <style>
+    body {
+      font-family: monospace;
+    }
+
+    #content {
+      width: 400px;
+      height: 400px;
+      margin-bottom: 1rem;
+      border: 1px solid #272727;
+    }
+
+    .main-content {
+      background-color: orangered;;
+      border-radius: .5rem;
+      border: 5px solid #272727 !important;
+    }
+
+    #toggleStyle {
+      border: 2px solid #272727;
+      font-size: 1.3rem;
+      padding: .4em .8em;
+      background-color: #272727;
+      color: #f1f1f1;
+      cursor: pointer;
+    }
+
+    #toggleStyle:hover {
+      color: #272727;
+      background-color: transparent;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>JavaScrip - classList</h1>
+
+  <div id="content" class="main-content main-content--accent main-content--orange"></div>
+
+  <button id="toggleStyle">Toggle Box Styles</button>
+
+  <script src="./classList.js"></script>
+</body>
+</html>

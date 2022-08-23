@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript - Handling Change</title>
+  <style>
+    body {
+      font-size: 1rem;
+      font-family: monospace;
+    }
+
+    button, select {
+      font-family: monospace;
+    }
+  </style>
+</head>
+<body>
+  <h1>JavaScript - Handling Change</h1>
+  
+  <div>
+    <label for="message">Message:</label>
+    <input type="text" class="input" id="message" name="message">
+    <button class="btn" id="submit">Submit</button>
+    <p id="result"></p>
+  </div>
+
+  <h1>Using change event for radio buttons</h1>
+
+  <div>
+    <span>Status:</span>
+    <input type="radio" name="status" id="pending" value="Pending">
+    <label for="pending">Pending</label>
+    
+    <input type="radio" name="status" id="resolved" value="Resolved">
+    <label for="resolved">Resolved</label>
+
+    <input type="radio" name="status" id="rejected" value="Rejected">
+    <label for="rejected">Rejected</label>
+  </div>
+  <p id="radioResult"></p>
+
+  <h1>Using change event for checkboxes</h1>
+
+  <div>
+    <label for="status">Web Technology:</label>
+    <input type="checkbox" id="html" value="HTML"> HTML
+    <input type="checkbox" id="css" value="CSS"> CSS
+    <input type="checkbox" id="js" value="JavaScript"> JavaScript
+  </div>
+
+  <p id="techResult"></p>
+
+  <h1>Using change event for select</h1>
+
+  <div>
+    <select id="lang">
+      <option value="">Select a language</option>
+      <option value="JavaScript">JavaScript</option>
+      <option value="PHP">PHP</option>
+      <option value="C++">C++</option>
+      <option value="Python">Python</option>
+    </select>
+  </div>
+
+  <p id="selectResult"></p>
+  <script src="./handlingChange.js"></script>
+</body>
+</html>
